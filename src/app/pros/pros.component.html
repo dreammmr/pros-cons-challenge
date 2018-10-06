@@ -1,0 +1,11 @@
+<ul>
+  <li *ngIf="!data || data && !data.length">No pros added yet.</li>
+  <li *ngFor='let item of data; let i = index;'>
+    {{item}}
+    <span (click)="notifyDelete(i)">
+      <i class="material-icons">
+      clear
+      </i>
+    </span>
+  </li>
+</ul>

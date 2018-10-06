@@ -1,0 +1,90 @@
+.app-container {
+  width: 60vw;
+  height: 500px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+}
+
+.main-header {
+  font-size: 30px;
+  color: rgb(226, 76, 104);
+  font-weight: 900;
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+
+.app-container .add-pros-cons {
+  position: absolute;
+  height: 64px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-container .add-pros {
+  margin-right: 3px;
+}
+
+.app-container .add-cons {
+  margin-left: 3px;
+}
+
+.app-container .title {
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(226, 76, 104);
+  margin: 30px;
+}
+
+.app-container .app-pros {
+  border-right: 5px solid rgb(210, 232, 225);
+}
+
+.app-container > div:not(.add-pros-cons), .app-container .add-pros-cons > div {
+  flex: 1;
+  min-width: 300px;
+}
+
+.app-container .add-pros-cons > div {
+  background-color: rgb(53, 53, 53);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.app-container .add-pros-cons > div input {
+  width: 80%;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+
+.app-container .add-pros-cons > div button {
+  border: none;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms all;
+}
+
+.app-container .add-pros-cons > div button:hover {
+  transform: scale(1.2) rotate(-90deg);
+}
+
+.app-container .add-pros-cons > div button i {
+  font-size: 20px;
+}
