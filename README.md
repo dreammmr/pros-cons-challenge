@@ -1,6 +1,6 @@
-# ProsConsChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+# pros-cons-challenge
+This repository is for my experimental challenge I've been participating.
 
 ## Development server
 
